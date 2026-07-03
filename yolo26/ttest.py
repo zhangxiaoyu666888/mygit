@@ -9,7 +9,7 @@ if __name__ == '__main__':
     # 1. 加载模型
     model = YOLO('yolo26s.pt')  # 或 'yolov8s.pt'
     print(666)
-    print()
+    #print()
 
     # 2. 强制搬到 GPU（更推荐用 model.to('cuda')）
     model.model = model.model.cuda()
