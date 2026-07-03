@@ -19,16 +19,16 @@ if __name__ == '__main__':
     print(f"Using device: {next(model.model.parameters()).device}")
 
     # 4. 训练（workers=2 会用到多进程，现在被保护了）
-    model.train(
-        data=r'D:\pythoncharm\pythonProject14\datasets\扣件\data.yaml',
-        epochs=1,
-        imgsz=640,
-        batch=4,
-        device=0,
-        workers=2,
-        project='runs/train',
-        name='rail_fastener_exp_gi'
-    )
+   #model.train(
+   #    data=r'D:\pythoncharm\pythonProject14\datasets\扣件\data.yaml',
+   #    epochs=1,
+   #    imgsz=640,
+   #    batch=4,
+   #    device=0,
+   #    workers=2,
+   #    project='runs/train',
+   #    name='rail_fastener_exp_gi'
+   #)
 
     # 5. 推理
     results = model(
